@@ -4,10 +4,10 @@
    ========================================================================== */
 
 :root {
-  --bg: #090a10;
-  --bg-surface: #11131c;
-  --bg-card: #161824;
-  --bg-card-hover: #1c1f30;
+  --bg: #07080d;
+  --bg-surface: rgba(17, 19, 28, 0.75);
+  --bg-card: rgba(22, 24, 36, 0.65);
+  --bg-card-hover: rgba(28, 31, 48, 0.85);
   
   --border: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(56, 189, 248, 0.4);
@@ -57,6 +57,17 @@ body {
   min-height: 100vh;
 }
 
+/* Dynamic Cosmic Space Starfield Canvas */
+#space-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Ambient Glow Orbs */
 .glow-orb {
   position: fixed;
@@ -64,7 +75,7 @@ body {
   filter: blur(140px);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.35;
+  opacity: 0.25;
 }
 
 .orb-top {
@@ -425,6 +436,8 @@ main, header, footer {
 
 .card-box {
   background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--border);
   padding: 2.2rem 2rem;
   border-radius: var(--radius-lg);
@@ -480,6 +493,8 @@ main, header, footer {
 
 .showcase-card {
   background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 2.2rem;

@@ -30,7 +30,7 @@ Açık kaynak sistemler, kamu yararına özgür yazılım ve akademik / teknik i
 
 Ben **Tunahan Haksever**. Web tarayıcısını yalnızca sayfaları görüntüleyen bir araç olmaktan çıkarıp, içerisinde bağımsız pencerelerin, sanal dosya sistemlerinin ve kodlama araçlarının çalıştığı eksiksiz bir bulut çalışma ortamına dönüştürmek üzerine çalışıyorum. 
 
-Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-Lang** gibi yenilikçi sistemlerin mimarı ve geliştiricisiyim.
+Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-Lang** gibi yenilikçi açık kaynak projeleri geliştiriyorum.
 
 - 🔭 **Aktif Geliştirme:** [Bitigey WebOS](https://github.com/tunahanhaksever/bitigey-webos) (Web İşletim Sistemi) & [Nova Cloud IDE](https://github.com/tunahanhaksever/nova-cloud-ide) (Tarayıcı İçi Geliştirme Ortamı)
 - ⚙️ **Çekirdek Sistem:** [Tusi-Lang](https://github.com/tunahanhaksever/tusi-lang) (Özel Lexer, AST Parser, Interpreter ve Paket Yöneticisi mimarisi)
