@@ -75,6 +75,7 @@ Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-
 
 ### 📬 İletişim & Bağlantılar
 
+- ✉️ **Resmi İletişim & Temsil:** [contact@tunahanhaksever.com](mailto:contact@tunahanhaksever.com)
 - 🌐 **Canlı Portfolyo:** [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/)
 - 📄 **5 Dilde CV:** [cv.html (EN • TR • DE • FR • ES)](https://tunahanhaksever.github.io/tunahanhaksever/cv.html)
 - 🔬 **Açık Kaynak Vizyonu:** Kamu yararına özgür yazılımlar, akademik araştırmalar ve WebOS sistemleri üzerine bağımsız bilimsel çalışmalar yürütmektedir.

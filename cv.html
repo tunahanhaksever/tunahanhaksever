@@ -411,7 +411,7 @@
         </div>
         <div class="contact-item">
           <i class="fa-solid fa-envelope"></i>
-          <span id="cv-email">tunahanhaksever (GitHub İletişim)</span>
+          <a href="mailto:contact@tunahanhaksever.com" id="cv-email" style="color: inherit; text-decoration: none;">contact@tunahanhaksever.com</a>
         </div>
       </div>
     </header>
@@ -572,7 +572,7 @@
         back: "Back to Portfolio",
         print: "Print / Save as PDF",
         location: "Turkey (Open Source & Remote Available)",
-        email: "Contact via GitHub",
+        email: "contact@tunahanhaksever.com",
         summaryTitle: "Professional Summary",
         summaryBody: "Innovative Open-Source Systems Developer and Author pioneering next-generation web platforms. Specialized in building full-scale browser-based desktop environments (WebOS), high-performance cloud development studios (Cloud IDE), and custom programming language engines (AST, Lexer, Parser & Interpreters). Committed to high-standard open-source engineering.",
         projectsTitle: "Flagship Projects & Open-Source Systems",
@@ -604,7 +604,7 @@
         back: "Portfolyoya Dön",
         print: "Yazdır / PDF Kaydet",
         location: "Türkiye (Açık Kaynak & Uzaktan Çalışma)",
-        email: "GitHub Üzerinden İletişim",
+        email: "contact@tunahanhaksever.com",
         summaryTitle: "Profesyonel Özet",
         summaryBody: "Yeni nesil web platformlarına öncülük eden Açık Kaynak Sistem Geliştiricisi ve Yazar. Tarayıcı tabanlı tam donanımlı masaüstü ortamları (WebOS), yüksek performanslı bulut kodlama stüdyoları (Cloud IDE) ve sıfırdan tasarlanmış programlama dili sistemleri (AST, Lexer, Parser ve Yorumlayıcılar) geliştirme üzerine çalışmaktadır. Kamu yararına açık kaynak bilimine bağlıdır.",
         projectsTitle: "Öne Çıkan Sistemler & Açık Kaynak Çalışmalar",
@@ -636,7 +636,7 @@
         back: "Zurück zum Portfolio",
         print: "Drucken / Als PDF speichern",
         location: "Türkei (Open Source & Remote)",
-        email: "Kontakt über GitHub",
+        email: "contact@tunahanhaksever.com",
         summaryTitle: "Berufliches Profil",
         summaryBody: "Innovativer Open-Source-Systementwickler und Autor für zukunftsweisende Webplattformen. Spezialisiert auf browserbasierte Desktop-Betriebssysteme (WebOS), Cloud-Entwicklungsumgebungen (Cloud IDE) und Compiler-/Interpreter-Architekturen (AST, Lexer, Parser).",
         projectsTitle: "Flaggschiff-Projekte & Open-Source-Systeme",
@@ -668,7 +668,7 @@
         back: "Retour au Portfolio",
         print: "Imprimer / Enregistrer en PDF",
         location: "Turquie (Open Source & Télétravail)",
-        email: "Contact via GitHub",
+        email: "contact@tunahanhaksever.com",
         summaryTitle: "Profil Professionnel",
         summaryBody: "Développeur système open source novateur et écrivain pionnier des plateformes web de nouvelle génération. Spécialisé dans les environnements de bureau basés sur navigateur (WebOS), les studios de développement cloud (Cloud IDE) et la conception de langages de programmation (AST, Lexer, Parser et Interpréteurs).",
         projectsTitle: "Systèmes Phares & Projets Open Source",
@@ -700,7 +700,7 @@
         back: "Volver al Portafolio",
         print: "Imprimir / Guardar en PDF",
         location: "Turquía (Open Source y Trabajo Remoto)",
-        email: "Contacto vía GitHub",
+        email: "contact@tunahanhaksever.com",
         summaryTitle: "Perfil Profesional",
         summaryBody: "Desarrollador de sistemas de código abierto innovador y escritor pionero en plataformas web de próxima generación. Especializado en la creación de entornos de escritorio basados en navegador (WebOS), estudios de desarrollo en la nube (Cloud IDE) y diseño de lenguajes de programación (AST, Lexer, Parser e Intérpretes).",
         projectsTitle: "Proyectos Principales y Sistemas Open Source",
@@ -738,7 +738,11 @@
       document.getElementById('txt-back').textContent = data.back;
       document.getElementById('txt-print').textContent = data.print;
       document.getElementById('cv-location').textContent = data.location;
-      document.getElementById('cv-email').textContent = data.email;
+      const emailEl = document.getElementById('cv-email');
+      if (emailEl) {
+        emailEl.textContent = data.email;
+        emailEl.href = "mailto:" + data.email;
+      }
 
       document.getElementById('sec-summary-title').textContent = data.summaryTitle;
       document.getElementById('sec-summary-body').textContent = data.summaryBody;

@@ -238,6 +238,7 @@ function initTerminal() {
       <div class="cyan-text">⌨️ Kullanılabilir Türkçe Komutlar:</div>
       <div>• <span class="highlight-text">kimdir</span>         : Tunahan Haksever kimdir? Biyografi ve misyon.</div>
       <div>• <span class="highlight-text">projeler</span>       : Açık kaynak sistemler (Bitigey WebOS, Nova IDE vb.).</div>
+      <div>• <span class="highlight-text">iletisim</span>       : Resmi iletişim ve temsil masası (contact@tunahanhaksever.com).</div>
       <div>• <span class="highlight-text">tusi-kilavuz</span>   : Tusi Programlama Dili tam eğitim kılavuzu ve sözdizimi.</div>
       <div>• <span class="highlight-text">tusi-demo</span>      : Canlı Tusi kodlama örneğini çalıştırır.</div>
       <div>• <span class="highlight-text">katkida-bulun</span>  : Ekosistemin gelişmesine nasıl yardımcı olabilirsiniz?</div>
@@ -343,6 +344,16 @@ function initTerminal() {
       <div>• <strong>Veri Sistemleri:</strong> Asenkron JSON Motorları (BitigeyDB), İstemci Güvenliği (MetaClean).</div>
     `,
 
+    // İletişim
+    iletisim: () => `
+      <div class="cyan-text">📬 Resmi İletişim & Temsil Masası:</div>
+      <div>• <strong>E-posta:</strong> <a href="mailto:contact@tunahanhaksever.com" style="color:#38bdf8; text-decoration:underline;">contact@tunahanhaksever.com</a></div>
+      <div>• <strong>Web Portalı:</strong> <a href="https://tunahanhaksever.com" target="_blank" style="color:#38bdf8;">tunahanhaksever.com</a></div>
+      <div>• <strong>Edebi Külliyat:</strong> <a href="https://bitigey.com" target="_blank" style="color:#38bdf8;">bitigey.com</a></div>
+      <div>• <strong>GitHub:</strong> <a href="https://github.com/tunahanhaksever" target="_blank" style="color:#38bdf8;">github.com/tunahanhaksever</a></div>
+      <div style="margin-top:0.4rem; color:#94a3b8; font-size:0.85rem;">(Edebi telif hakları, yayınevi süreçleri, müzik & yapım projeleri ve açık kaynak bilimsel araştırmalar için iletişime geçebilirsiniz.)</div>
+    `,
+
     // Temizle
     temizle: () => {
       body.querySelectorAll('.term-line-history').forEach(el => el.remove());
@@ -350,7 +361,11 @@ function initTerminal() {
     }
   };
 
-  // English aliases for international visitors
+  // English & Turkish aliases
+  commands.contact = commands.iletisim;
+  commands.email = commands.iletisim;
+  commands.eposta = commands.iletisim;
+  commands.mail = commands.iletisim;
   commands.help = commands.yardim;
   commands.whoami = commands.kimdir;
   commands.projects = commands.projeler;

@@ -221,6 +221,18 @@ main, header, footer {
   border-color: #fff;
 }
 
+.header-btn.contact-btn {
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--cyan);
+  border: 1px solid var(--border-cyan);
+}
+
+.header-btn.contact-btn:hover {
+  background: var(--cyan);
+  color: #050811;
+  border-color: var(--cyan);
+}
+
 /* Mobile Menu Toggle Button */
 .mobile-toggle-btn {
   display: none;
