@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSpaceBackground();
   initProjectFilters();
   initTerminal();
+  initTusiStudio();
 });
 
 /* ==========================================================================
@@ -380,10 +381,21 @@ function initTerminal() {
 
     if (commands[cmd]) {
       respLine.innerHTML = commands[cmd]();
+    } else if (cmd.startsWith('sor-') || cmd.startsWith('sor ')) {
+      const q = cmdRaw.replace(/^sor\s*/i, '').trim();
+      const reply = getTusiBotReply(q);
+      respLine.innerHTML = `<div class="cyan-text">🤖 Tusi Asistanı:</div><div>${reply}</div>`;
     } else if (cmd.startsWith('tusi-') || cmd.startsWith('tusi')) {
       respLine.innerHTML = commands['tusi-demo']();
     } else {
-      respLine.innerHTML = `<span style="color:#ef4444;">Komut bulunamadı: '${escapeHtml(cmdRaw)}'. Kullanılabilir Türkçe komutları görmek için <strong>yardım</strong> yazın.</span>`;
+      // Check if it's a natural question
+      const qLower = cmdRaw.toLowerCase();
+      if (qLower.includes('nasıl') || qLower.includes('nedir') || qLower.includes('web') || qLower.includes('kod') || qLower.includes('tusi')) {
+        const reply = getTusiBotReply(cmdRaw);
+        respLine.innerHTML = `<div class="cyan-text">🤖 Tusi Asistanı:</div><div>${reply}</div>`;
+      } else {
+        respLine.innerHTML = `<span style="color:#ef4444;">Komut bulunamadı: '${escapeHtml(cmdRaw)}'. Kullanılabilir komutları görmek için <strong>yardım</strong> yazın veya Tusi'ye soru sormak için <strong>sor [sorunuz]</strong> yazın.</span>`;
+      }
     }
 
     // Insert before the input row
@@ -424,4 +436,319 @@ function escapeHtml(str) {
       '"': '&quot;'
     }[tag] || tag)
   );
+}
+
+/* ==========================================================================
+   4. Tusi-Lang Studio: AI Bot Engine & Live Website Simulator
+   ========================================================================== */
+function initTusiStudio() {
+  initTusiBot();
+  initTusiWebMockup();
+}
+
+/**
+ * Knowledge Base & Response Engine for Tusi-Lang
+ */
+function getTusiBotReply(query) {
+  const q = (query || '').toLowerCase().trim();
+
+  // 1. Web Sitesi / Sunucu / HTTP
+  if (q.includes('web') || q.includes('site') || q.includes('sunucu') || q.includes('http') || q.includes('port')) {
+    return `
+      <div>🌐 <strong>Tusi-Lang ile Web Sitesi ve Sunucu Geliştirme:</strong></div>
+      <p style="margin: 4px 0;">Tusi, yerleşik HTTP sunucu motoruna (<code>sunucu_baslat</code>) sahiptir. Tek bir fonksiyonla dinamik sayfalar üretebilirsiniz:</p>
+      <pre><code>// site.tusi - Web Sunucusu
+fonksiyon ana_sayfa(istek, yanit) {
+  yanit_yaz(yanit, "&lt;h1&gt;Tusi Web Sunucusu Çalışıyor!&lt;/h1&gt;")
+  değişken saat = zaman_simdi()
+  yanit_yaz(yanit, "&lt;p&gt;Sunucu Saati: " + saat + "&lt;/p&gt;")
+  yanit_bitir(yanit)
+}
+
+// 8080 portunda sunucuyu dinlemeye al
+sunucu_baslat(8080, ana_sayfa)</code></pre>
+      <div style="color: #38bdf8; margin-top: 6px; font-size: 0.82rem;">👉 Sağdaki panelde bu kodun canlı çalışan tarayıcı simülasyonunu anlık olarak görebilirsiniz!</div>
+    `;
+  }
+
+  // 2. Hesap Makinesi / İşlem
+  if (q.includes('hesap') || q.includes('makine') || q.includes('topla') || q.includes('çarp') || q.includes('böl')) {
+    return `
+      <div>🧮 <strong>Tusi ile 4 İşlem Hesap Makinesi:</strong></div>
+      <p style="margin: 4px 0;">Koşul ve fonksiyon mantığını birleştiren tam hesap makinesi örneği:</p>
+      <pre><code>fonksiyon hesapla(islem, a, b) {
+  eğer (islem == "+") ise {
+    döndür a + b;
+  }
+  eğer (islem == "-") ise {
+    döndür a - b;
+  }
+  eğer (islem == "*") ise {
+    döndür a * b;
+  }
+  eğer (islem == "/") ise {
+    eğer (b == 0) ise {
+      döndür "Hata: Sıfıra bölünemez!";
+    } değilse {
+      döndür a / b;
+    }
+  }
+  döndür "Bilinmeyen işlem!";
+}
+
+yazdır("15 + 25 = " + hesapla("+", 15, 25));
+yazdır("100 / 4 = " + hesapla("/", 100, 4));</code></pre>
+    `;
+  }
+
+  // 3. Döngüler / Loops
+  if (q.includes('döngü') || q.includes('dongu') || q.includes('loop') || q.includes('while') || q.includes('for') || q.includes('tekrar')) {
+    return `
+      <div>🔁 <strong>Tusi-Lang Döngü Yapısı:</strong></div>
+      <p style="margin: 4px 0;">Tusi'de <code>döngü</code> anahtar kelimesi ile şart sağlandığı sürece kod bloğu işletilir:</p>
+      <pre><code>değişken sayac = 1;
+değişken toplam = 0;
+
+döngü (sayac <= 5) {
+  yazdır("Adım: " + sayac);
+  toplam = toplam + sayac;
+  sayac = sayac + 1;
+}
+
+yazdır("1'den 5'e kadar toplam: " + toplam);</code></pre>
+    `;
+  }
+
+  // 4. Koşullar / If-Else / Şart
+  if (q.includes('koşul') || q.includes('kosul') || q.includes('şart') || q.includes('sart') || q.includes('eğer') || q.includes('eger') || q.includes('ise') || q.includes('değilse') || q.includes('degilse')) {
+    return `
+      <div>⚖️ <strong>Tusi-Lang Koşullu İfadeler (eğer / değilse):</strong></div>
+      <pre><code>değişken notu = 85;
+
+eğer (notu >= 90) ise {
+  yazdır("Tebrikler: AA ile geçtiniz!");
+} değilse {
+  eğer (notu >= 60) ise {
+    yazdır("Başarılı: Geçtiniz.");
+  } değilse {
+    yazdır("Kaldınız, bütünlemeye hazırlanınız.");
+  }
+}</code></pre>
+    `;
+  }
+
+  // 5. Fonksiyonlar / Functions
+  if (q.includes('fonksiyon') || q.includes('metot') || q.includes('function') || q.includes('def') || q.includes('tanımla')) {
+    return `
+      <div>⚙️ <strong>Tusi-Lang Fonksiyon Tanımlama:</strong></div>
+      <p style="margin: 4px 0;">Fonksiyonlar <code>fonksiyon</code> sözcüğüyle açılır ve <code>döndür</code> ile değer üretir:</p>
+      <pre><code>fonksiyon karesini_al(sayi) {
+  döndür sayi * sayi;
+}
+
+fonksiyon selamlama(isim) {
+  döndür "Sayın " + isim + ", Tusi dünyasına hoş geldiniz!";
+}
+
+yazdır(selamlama("Tunahan"));
+yazdır("7'nin Karesi: " + karesini_al(7));</code></pre>
+    `;
+  }
+
+  // 6. Değişkenler / Variables
+  if (q.includes('değişken') || q.includes('degisken') || q.includes('var') || q.includes('let') || q.includes('veri tipi')) {
+    return `
+      <div>📦 <strong>Tusi-Lang Değişken Tanımlama:</strong></div>
+      <p style="margin: 4px 0;">Tusi dinamik tipli bir dildir; metin, sayı, mantıksal değer ve dizileri doğrudan saklar:</p>
+      <pre><code>değişken ad = "Tunahan Haksever";     // Metin (String)
+değişken yil = 2026;                  // Sayı (Number)
+değişken aktif_mi = doğru;            // Mantıksal (Boolean)
+değişken diller = ["Tusi", "JS", "C"]; // Dizi (Array)
+
+yazdır(ad + " - " + yil);</code></pre>
+    `;
+  }
+
+  // 7. Tusi Nedir / Neden Yapıldı / Kim Geliştirdi
+  if (q.includes('nedir') || q.includes('kim') || q.includes('amaç') || q.includes('amac') || q.includes('neden') || q.includes('felsefe')) {
+    return `
+      <div>🦄 <strong>Tusi Programlama Dili Nedir?</strong></div>
+      <p style="margin: 4px 0;">
+        <strong>Tusi-Lang</strong>, Türkçenin fonetik sadeliği ile derleyici teorisini harmanlayan bağımsız bir programlama dilidir.
+        <strong>Tunahan Haksever</strong> tarafından açık kaynaklı ve eğitim amaçlı bir sistem mimarisi olarak geliştirilmiştir.
+      </p>
+      <ul style="margin: 6px 0; padding-left: 20px;">
+        <li>🔹 <strong>Özgün Mimari:</strong> Harici kütüphane bağımlılığı olmaksızın kendi Lexer ve AST Parser motorunu barındırır.</li>
+        <li>🔹 <strong>TPM (Tusi Paket Yöneticisi):</strong> Modüler kütüphane paylaşım sistemi.</li>
+        <li>🔹 <strong>Yerleşik Web Motoru:</strong> Ek sunucu yazılımı kurmadan web siteleri ve API'ler sunabilir.</li>
+      </ul>
+    `;
+  }
+
+  // 8. Dosya ve Sistem İşlemleri
+  if (q.includes('dosya') || q.includes('file') || q.includes('oku') || q.includes('yaz')) {
+    return `
+      <div>📁 <strong>Tusi-Lang Dosya İşlemleri:</strong></div>
+      <pre><code>// Dosyaya veri kaydetme
+dosya_yaz("kayitlar.txt", "Tusi ile sistem güvenli şekilde başlatıldı.\n");
+
+// Dosyadan veri okuma
+değişken icerik = dosya_oku("kayitlar.txt");
+yazdır("Okunan Belge: " + icerik);</code></pre>
+    `;
+  }
+
+  // 9. Matematik ve Sayı İşlemleri
+  if (q.includes('matematik') || q.includes('kök') || q.includes('rastgele') || q.includes('pi') || q.includes('math')) {
+    return `
+      <div>📐 <strong>Tusi Standart Matematik Kütüphanesi:</strong></div>
+      <pre><code>değişken kok = mat_kok(144);          // 12
+değişken zar = mat_rastgele(6);       // 1 - 6 arası rastgele tam sayı
+değişken us = mat_us(2, 8);           // 2^8 = 256
+
+yazdır("Karekök: " + kok);
+yazdır("Zar Atışı: " + zar);
+yazdır("2 üzeri 8: " + us);</code></pre>
+    `;
+  }
+
+  // 10. Selamlaşma / Genel
+  if (q.includes('merhaba') || q.includes('selam') || q.includes('naber') || q.includes('nasılsın') || q.includes('gunaydin') || q.includes('iyi günler')) {
+    return `
+      <div>👋 <strong>Merhaba! Hoş geldiniz.</strong></div>
+      <p style="margin: 4px 0;">Ben Tusi-Lang akıllı kodlama asistanıyım. Tusi diliyle ilgili dilediğiniz her soruyu sorabilirsiniz.</p>
+      <div style="margin-top: 6px; color: #38bdf8;">
+        💡 <em>İpuçları: "Web sitesi nasıl yapılır?", "Hesap makinesi kodu", "Döngüler nasıl yazılır?", "Fonksiyon tanımlama" yazabilirsiniz.</em>
+      </div>
+    `;
+  }
+
+  // 11. Akıllı Genel Yanıt / Fallback
+  return `
+    <div>💡 <strong>Tusi-Lang Sözdizimi Özeti:</strong></div>
+    <p style="margin: 4px 0;">"<em>${escapeHtml(query)}</em>" konulu sorunuz için temel Tusi sözdizim şablonu:</p>
+    <pre><code>// Tusi-Lang Temel Kod Şablonu
+fonksiyon ornek_islem(girdi) {
+  değişken sonuc = girdi * 2;
+  eğer (sonuc > 10) ise {
+    döndür "Sonuç Yüksek: " + sonuc;
+  } değilse {
+    döndür "Sonuç Normal: " + sonuc;
+  }
+}
+
+yazdır(ornek_islem(7));</code></pre>
+    <div style="font-size: 0.82rem; color: #94a3b8; margin-top: 4px;">
+      Daha spesifik bir örnek için butonlara tıklayabilir veya "web sitesi", "hesap makinesi", "fonksiyon", "döngü" gibi anahtar kelimelerle sorabilirsiniz.
+    </div>
+  `;
+}
+
+/**
+ * Tusi AI Bot Chat Interface Logic
+ */
+function initTusiBot() {
+  const chatBody = document.getElementById('bot-chat-body');
+  const inputField = document.getElementById('bot-input-field');
+  const sendBtn = document.getElementById('bot-send-btn');
+  const pills = document.querySelectorAll('.bot-pill');
+
+  if (!chatBody || !inputField || !sendBtn) return;
+
+  function appendMessage(text, sender = 'bot') {
+    const bubble = document.createElement('div');
+    bubble.className = `chat-bubble ${sender}`;
+    if (sender === 'user') {
+      bubble.textContent = text;
+    } else {
+      bubble.innerHTML = text;
+    }
+    chatBody.appendChild(bubble);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function handleUserQuery(query) {
+    const cleanQ = (query || '').trim();
+    if (!cleanQ) return;
+
+    // Add user message
+    appendMessage(cleanQ, 'user');
+    inputField.value = '';
+
+    // Instant bot response (natural micro-delay for realistic UI feedback)
+    setTimeout(() => {
+      const replyHtml = getTusiBotReply(cleanQ);
+      appendMessage(replyHtml, 'bot');
+    }, 40);
+  }
+
+  sendBtn.addEventListener('click', () => {
+    handleUserQuery(inputField.value);
+  });
+
+  inputField.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      handleUserQuery(inputField.value);
+    }
+  });
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const prompt = pill.getAttribute('data-prompt');
+      if (prompt) {
+        handleUserQuery(prompt);
+      }
+    });
+  });
+}
+
+/**
+ * Live Tusi Web Server (site.tusi) Interactive Simulator
+ */
+function initTusiWebMockup() {
+  const clockEl = document.getElementById('tusi-clock');
+  const titleEl = document.getElementById('tusi-view-title');
+  const descEl = document.getElementById('tusi-view-desc');
+  const routeBtns = document.querySelectorAll('.browser-link-btn');
+
+  // 1. Live server clock simulating zaman_simdi()
+  function updateClock() {
+    if (!clockEl) return;
+    const now = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    const timeStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+    clockEl.textContent = `Sunucu Saati (zaman_simdi): ${timeStr}`;
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // 2. Simulated Tusi Routes (site.tusi response router)
+  const routesData = {
+    '/': {
+      title: '🐟 Tusi Dünyasına Hoş Geldiniz!',
+      desc: 'Bu site tamamen <strong>Tusi</strong> programlama dili ve yerleşik web motoru (<code>sunucu_baslat</code>) ile derlenip sunulmaktadır.'
+    },
+    '/hakkimizda': {
+      title: '📖 Hakkımızda (site.tusi)',
+      desc: 'Tusi-Lang; Türkçenin sözdizimsel zenginliğini modern yazılımla buluşturan, Tunahan Haksever tarafından geliştirilmiş bağımsız bir dildir.'
+    },
+    '/ozellikler': {
+      title: '⚡ Tusi Web Sunucusu Yetenekleri',
+      desc: '• Sıfır dış bağımlılık ile yerleşik HTTP motoru<br>• Mikro-saniye seviyesinde AST yorumlama hızı<br>• TPM (Tusi Paket Yöneticisi) ile tam modül desteği.'
+    }
+  };
+
+  routeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      routeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const route = btn.getAttribute('data-route');
+      const data = routesData[route] || routesData['/'];
+
+      if (titleEl) titleEl.innerHTML = data.title;
+      if (descEl) descEl.innerHTML = data.desc;
+    });
+  });
 }

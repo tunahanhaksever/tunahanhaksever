@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Cache-Busted Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=3.0">
+  <link rel="stylesheet" href="style.css?v=3.2">
 
   <!-- Google Knowledge Graph Schema -->
   <script type="application/ld+json">
@@ -77,6 +77,7 @@
         <a href="#about" class="nav-item">Hakkımda</a>
         <a href="#ecosystem" class="nav-item">Sistemler & WebOS</a>
         <a href="#apps" class="nav-item">Uygulamalar</a>
+        <a href="#tusi-studio" class="nav-item">Tusi Stüdyo & Bot</a>
         <a href="#literature" class="nav-item">Edebiyat & Eserler</a>
         <a href="#terminal" class="nav-item">Terminal</a>
         <a href="cv.html" class="nav-item cv-highlight">
@@ -364,6 +365,88 @@
       </div>
     </section>
 
+    <!-- Tusi-Lang Studio: AI Bot & Live Website Generator -->
+    <section id="tusi-studio" class="page-section">
+      <div class="section-title-wrap">
+        <span class="section-badge">// TUSİ DİLİ STÜDYOSU & AKILLI ASİSTAN</span>
+        <h2 class="section-main-title">Tusi-Lang Akıllı Bot & Canlı Web Sitesi</h2>
+        <p class="section-sub">Tusi diliyle ilgili sorularınızı bota sorun, anında kodunu alın veya Tusi ile yazılmış canlı web sitesini test edin.</p>
+      </div>
+
+      <div class="tusi-studio-grid">
+        <!-- Left: Tusi AI Bot -->
+        <div class="tusi-panel">
+          <div class="tusi-panel-header">
+            <div class="tusi-panel-title">
+              <span class="bot-status-dot"></span>
+              <span>🤖 Tusi Akıllı Kod Asistanı</span>
+            </div>
+            <span class="tech-label">v2.0 • Anında Yanıt</span>
+          </div>
+
+          <div class="bot-chat-body" id="bot-chat-body">
+            <div class="chat-bubble bot">
+              👋 <strong>Merhaba!</strong> Ben Tusi Programlama Dili akıllı asistanıyım. 
+              Tusi diliyle ilgili aklınıza gelen her şeyi sorabilirsiniz. İster web sitesi yazmayı, 
+              ister döngüleri, koşulları veya matematik hesaplamalarını sorun; anında çalışan kodunu yazayım!
+            </div>
+          </div>
+
+          <div class="bot-prompts-bar">
+            <span class="bot-pill" data-prompt="Tusi ile web sitesi nasıl yapılır?">🌐 Web Sitesi Yap</span>
+            <span class="bot-pill" data-prompt="Hesap makinesi kodu ver">🧮 Hesap Makinesi</span>
+            <span class="bot-pill" data-prompt="Döngüler ve koşullar nasıl yazılır?">🔁 Döngü & Şart</span>
+            <span class="bot-pill" data-prompt="Fonksiyon nasıl tanımlanır?">⚙️ Fonksiyonlar</span>
+            <span class="bot-pill" data-prompt="Tusi nedir ve neden geliştirildi?">❓ Tusi Nedir?</span>
+          </div>
+
+          <div class="bot-input-bar">
+            <input type="text" id="bot-input-field" class="bot-input-field" placeholder="Tusi hakkında bir soru sorun (örn: web sitesi nasıl yapılır?)...">
+            <button id="bot-send-btn" class="bot-send-btn"><i class="fa-solid fa-paper-plane"></i> Sor</button>
+          </div>
+        </div>
+
+        <!-- Right: Live Tusi-Generated Website -->
+        <div class="tusi-panel">
+          <div class="tusi-panel-header">
+            <div class="tusi-panel-title">
+              <i class="fa-solid fa-code" style="color: var(--cyan);"></i>
+              <span>Tusi ile Yazılmış Canlı Web Sitesi (site.tusi)</span>
+            </div>
+            <span class="tech-label">8080 Port • Canlı Sunucu</span>
+          </div>
+
+          <div class="tusi-web-split">
+            <!-- Code Editor Preview -->
+            <div class="code-editor-mock">
+              <span class="cm">// Tusi Web Sunucusu Kodu (site.tusi)</span><br>
+              <span class="kw">fonksiyon</span> <span class="fn">ana_sayfa</span>(istek, yanit) {<br>
+              &nbsp;&nbsp;<span class="fn">yanit_yaz</span>(yanit, <span class="str">"&lt;div class='card'&gt;&lt;h1&gt;🐟 Tusi Dünyasına Hoş Geldiniz!&lt;/h1&gt;"</span>)<br>
+              &nbsp;&nbsp;<span class="kw">değişken</span> saat = <span class="fn">zaman_simdi</span>()<br>
+              &nbsp;&nbsp;<span class="fn">yanit_yaz</span>(yanit, <span class="str">"&lt;p&gt;Sunucu Saati: "</span> + saat + <span class="str">"&lt;/p&gt;&lt;/div&gt;"</span>)<br>
+              &nbsp;&nbsp;<span class="fn">yanit_bitir</span>(yanit)<br>
+              }<br>
+              <span class="fn">sunucu_baslat</span>(8080, ana_sayfa)
+            </div>
+
+            <!-- Live Browser View Mockup -->
+            <div class="browser-preview-frame">
+              <div class="browser-card-content" id="browser-live-view">
+                <h4 id="tusi-view-title">🐟 Tusi Dünyasına Hoş Geldiniz!</h4>
+                <p id="tusi-view-desc">Bu site tamamen <strong>Tusi</strong> programlama dili ve yerleşik web motoru ile oluşturuldu.</p>
+                <div class="browser-live-clock" id="tusi-clock">Sunucu Saati: Yükleniyor...</div>
+                <div class="browser-nav-links">
+                  <button class="browser-link-btn active" data-route="/">Ana Sayfa</button>
+                  <button class="browser-link-btn" data-route="/hakkimizda">Hakkımızda</button>
+                  <button class="browser-link-btn" data-route="/ozellikler">Özellikler</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Literature & Works Section -->
     <section id="literature" class="page-section">
       <div class="section-title-wrap">
@@ -521,6 +604,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=3.2"></script>
 </body>
 </html>
