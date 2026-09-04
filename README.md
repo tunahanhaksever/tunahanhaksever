@@ -14,7 +14,7 @@
 
 ### 📄 Çok Dilli Resmi Özgeçmiş / International CV (5 Languages)
 
-Dünya çapındaki işbirlikleri ve incelemeler için hazırlanan interaktif ve PDF çıktı uyumlu özgeçmişe aşağıdaki bağlantılardan erişebilirsiniz:
+Açık kaynak sistemler, kamu yararına özgür yazılım ve akademik / teknik incelemeler için hazırlanan interaktif ve PDF çıktı uyumlu özgeçmişe aşağıdaki bağlantılardan erişebilirsiniz:
 
 | Dil (Language) | Başlık (Document) | Doğrudan Bağlantı |
 | :--- | :--- | :--- |
@@ -78,5 +78,4 @@ Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-
 
 - 🌐 **Canlı Portfolyo:** [tunahanhaksever.github.io/tunahan-haksever](https://tunahanhaksever.github.io/tunahan-haksever/)
 - 📄 **5 Dilde CV:** [cv.html (EN • TR • DE • FR • ES)](https://tunahanhaksever.github.io/tunahan-haksever/cv.html)
-- 💻 **GitHub:** [@tunahanhaksever](https://github.com/tunahanhaksever)
-- 🤝 **İş Birlikleri:** Açık kaynak sistemler, WebOS mimarisi ve bulut teknolojileri üzerine küresel iş birliklerine açığım.
+- 🔬 **Açık Kaynak Vizyonu:** Kamu yararına özgür yazılımlar, akademik araştırmalar ve WebOS mimarileri üzerine bağımsız bilimsel çalışmalar yürütmektedir.
