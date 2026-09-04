@@ -5,8 +5,8 @@
   <em>Tarayıcı Sınırlarını Zorlayan Web İşletim Sistemleri, Bulut Geliştirme Ortamları ve Programlama Dili Mimarileri</em>
 </p>
 
-[![Canlı Portfolyo](https://img.shields.io/badge/🌐_Canlı_Web_Portfolyo-Ziyaret_Et-38bdf8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tunahanhaksever.github.io/tunahan-haksever/)
-[![CV / Resume](https://img.shields.io/badge/📄_CV_/_Resume-5_Dilde_(EN•TR•DE•FR•ES)-a855f7?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://tunahanhaksever.github.io/tunahan-haksever/cv.html)
+[![Canlı Portfolyo](https://img.shields.io/badge/🌐_Canlı_Web_Portfolyo-Ziyaret_Et-38bdf8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tunahanhaksever.github.io/tunahanhaksever/)
+[![CV / Resume](https://img.shields.io/badge/📄_CV_/_Resume-5_Dilde_(EN•TR•DE•FR•ES)-a855f7?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://tunahanhaksever.github.io/tunahanhaksever/cv.html)
 [![GitHub Takipçi](https://img.shields.io/github/followers/tunahanhaksever?label=GitHub_Takipçi&style=for-the-badge&color=10b981&logo=github)](https://github.com/tunahanhaksever)
 [![Açık Kaynak Projeler](https://img.shields.io/badge/Açık_Kaynak-10+_Aktif_Sistem-3b82f6?style=for-the-badge&logo=git)](https://github.com/tunahanhaksever?tab=repositories)
 
@@ -18,11 +18,11 @@ Açık kaynak sistemler, kamu yararına özgür yazılım ve akademik / teknik i
 
 | Dil (Language) | Başlık (Document) | Doğrudan Bağlantı |
 | :--- | :--- | :--- |
-| 🇬🇧 **English** | International Curriculum Vitae | [View English CV](https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=en) |
-| 🇹🇷 **Türkçe** | Profesyonel Yazılım Mimarı Özgeçmişi | [Türkçe CV'yi İncele](https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=tr) |
-| 🇩🇪 **Deutsch** | Softwarearchitekt Lebenslauf | [Deutschen Lebenslauf ansehen](https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=de) |
-| 🇫🇷 **Français** | Curriculum Vitae d'Architecte Logiciel | [Consulter le CV en Français](https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=fr) |
-| 🇪🇸 **Español** | Currículum Vítae de Arquitecto de Software | [Ver Currículum en Español](https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=es) |
+| 🇬🇧 **English** | International Curriculum Vitae | [View English CV](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=en) |
+| 🇹🇷 **Türkçe** | Profesyonel Yazılım Mimarı Özgeçmişi | [Türkçe CV'yi İncele](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=tr) |
+| 🇩🇪 **Deutsch** | Softwarearchitekt Lebenslauf | [Deutschen Lebenslauf ansehen](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=de) |
+| 🇫🇷 **Français** | Curriculum Vitae d'Architecte Logiciel | [Consulter le CV en Français](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=fr) |
+| 🇪🇸 **Español** | Currículum Vítae de Arquitecto de Software | [Ver Currículum en Español](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=es) |
 
 ---
 
@@ -34,7 +34,7 @@ Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-
 
 - 🔭 **Aktif Geliştirme:** [Bitigey WebOS](https://github.com/tunahanhaksever/bitigey-webos) (Web İşletim Sistemi) & [Nova Cloud IDE](https://github.com/tunahanhaksever/nova-cloud-ide) (Tarayıcı İçi Geliştirme Ortamı)
 - ⚙️ **Çekirdek Sistem:** [Tusi-Lang](https://github.com/tunahanhaksever/tusi-lang) (Özel Lexer, AST Parser, Interpreter ve Paket Yöneticisi mimarisi)
-- 🌐 **Canlı Portfolyo:** İnteraktif terminal simülatörü ve projelerimin canlı demoları için [tunahanhaksever.github.io/tunahan-haksever](https://tunahanhaksever.github.io/tunahan-haksever/)
+- 🌐 **Canlı Portfolyo:** İnteraktif terminal simülatörü ve projelerimin canlı demoları için [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/)
 - 🧠 **Uzmanlık Odakları:** Sistem Mimarisi, WebAssembly (WASM), Monaco Editor Çekirdeği, Yorumlayıcı / Derleyici Tasarımı, Modern Web Mimarileri
 
 ---
@@ -76,6 +76,6 @@ Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-
 
 ### 📬 İletişim & Bağlantılar
 
-- 🌐 **Canlı Portfolyo:** [tunahanhaksever.github.io/tunahan-haksever](https://tunahanhaksever.github.io/tunahan-haksever/)
-- 📄 **5 Dilde CV:** [cv.html (EN • TR • DE • FR • ES)](https://tunahanhaksever.github.io/tunahan-haksever/cv.html)
+- 🌐 **Canlı Portfolyo:** [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/)
+- 📄 **5 Dilde CV:** [cv.html (EN • TR • DE • FR • ES)](https://tunahanhaksever.github.io/tunahanhaksever/cv.html)
 - 🔬 **Açık Kaynak Vizyonu:** Kamu yararına özgür yazılımlar, akademik araştırmalar ve WebOS mimarileri üzerine bağımsız bilimsel çalışmalar yürütmektedir.

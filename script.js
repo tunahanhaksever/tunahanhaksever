@@ -1,8 +1,4 @@
-/**
- * Tunahan Haksever Portfolio Interactive Engine
- * Zero dependencies, ultra-fast vanilla JS
- */
-
+// Tunahan Haksever - Portfolio & Systems Showcase
 document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initTerminal();
