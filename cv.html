@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- International SEO & Metadata -->
+  <title id="page-title">Tunahan Haksever | Curriculum Vitae (CV) - Software Architect</title>
+  <meta name="description" id="meta-desc" content="Official Curriculum Vitae of Tunahan Haksever. Software Architect, creator of Bitigey WebOS, Nova Cloud IDE, and Tusi-Lang. Available in EN, TR, DE, FR, ES.">
+  <meta name="keywords" content="Tunahan Haksever, Tunahan Haksever CV, Tunahan Haksever Resume, Software Architect Resume, WebOS Developer, Cloud IDE, Tusi-Lang, Bitigey, Full Stack CV">
+  <meta name="author" content="Tunahan Haksever">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html">
+
+  <!-- Hreflang Tags for Multi-language International Google SEO -->
+  <link rel="alternate" hreflang="x-default" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=en">
+  <link rel="alternate" hreflang="en" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=en">
+  <link rel="alternate" hreflang="tr" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=tr">
+  <link rel="alternate" hreflang="de" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=fr">
+  <link rel="alternate" hreflang="es" href="https://tunahanhaksever.github.io/tunahan-haksever/cv.html?lang=es">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Tunahan Haksever | International Curriculum Vitae">
+  <meta property="og:description" content="Software Architect & Creator of Bitigey WebOS, Nova Cloud IDE, Tusi-Lang.">
+  <meta property="og:url" content="https://tunahanhaksever.github.io/tunahan-haksever/cv.html">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CV Styles -->
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #14161f;
+      --card: #1a1d29;
+      --border: rgba(255, 255, 255, 0.1);
+      --primary: #38bdf8;
+      --accent: #a855f7;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-main: 'Inter', sans-serif;
+      --font-display: 'Outfit', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .cv-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    /* Top Controls Bar (Lang switcher & Print button) */
+    .top-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--card);
+      padding: 0.35rem 0.5rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover { color: var(--text); }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #000;
+    }
+
+    .action-tools {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn-action {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-action.primary {
+      background: var(--primary);
+      color: #000;
+      border-color: var(--primary);
+    }
+
+    .btn-action.primary:hover {
+      background: #0284c7;
+      color: #fff;
+    }
+
+    /* CV Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .cv-title-group h1 {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .cv-title-group h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 0.3rem;
+    }
+
+    .cv-title-group .cv-tagline {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    .contact-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-item i {
+      color: var(--primary);
+      width: 16px;
+    }
+
+    .contact-item a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-item a:hover { text-decoration: underline; }
+
+    /* CV Sections */
+    .cv-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .section-heading i { color: var(--primary); }
+
+    .summary-text {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    /* Projects & Roles Timeline */
+    .timeline-item {
+      margin-bottom: 1.75rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.3rem;
+    }
+
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .item-role {
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+    }
+
+    .item-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.6;
+    }
+
+    .item-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .skill-badge {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-block {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+
+    .skill-block h4 {
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-block h4 i { color: var(--accent); }
+
+    .skill-block p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+        padding: 0;
+      }
+      .cv-container {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        background: #fff !important;
+        max-width: 100% !important;
+      }
+      .top-toolbar, .btn-action { display: none !important; }
+      .cv-title-group h1 { color: #000 !important; }
+      .cv-title-group h2, .item-role, .contact-item i, .section-heading i { color: #0284c7 !important; }
+      .summary-text, .item-desc, .contact-meta, .skill-block p { color: #333 !important; }
+      .item-title, .section-heading, .skill-block h4 { color: #000 !important; }
+      .skill-block { border-color: #ddd !important; background: #fafafa !important; }
+      .skill-badge { border-color: #ccc !important; background: #eee !important; color: #111 !important; }
+      .cv-section { border-color: #ddd !important; }
+    }
+
+    @media (max-width: 640px) {
+      .cv-container { padding: 1.75rem 1.25rem; }
+      .cv-title-group h1 { font-size: 1.85rem; }
+    }
+  </style>
+
+  <!-- Google Structured Data (JSON-LD) for CV -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tunahan Haksever",
+    "jobTitle": "Software Architect",
+    "url": "https://tunahanhaksever.github.io/tunahan-haksever/cv.html",
+    "sameAs": [
+      "https://github.com/tunahanhaksever"
+    ],
+    "knowsAbout": ["WebOS", "Cloud IDE", "Compiler Design", "JavaScript", "TypeScript", "WebAssembly"]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="cv-container">
+    <!-- Top Toolbar -->
+    <div class="top-toolbar">
+      <div class="lang-selector">
+        <button class="lang-btn active" data-lang="en">🇬🇧 English</button>
+        <button class="lang-btn" data-lang="tr">🇹🇷 Türkçe</button>
+        <button class="lang-btn" data-lang="de">🇩🇪 Deutsch</button>
+        <button class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+        <button class="lang-btn" data-lang="es">🇪🇸 Español</button>
+      </div>
+
+      <div class="action-tools">
+        <a href="index.html" class="btn-action">
+          <i class="fa-solid fa-arrow-left"></i> <span id="txt-back">Portfolyoya Dön</span>
+        </a>
+        <button onclick="window.print()" class="btn-action primary">
+          <i class="fa-solid fa-print"></i> <span id="txt-print">Yazdır / PDF Kaydet</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- CV Header -->
+    <header class="cv-header">
+      <div class="cv-title-group">
+        <h1>Tunahan Haksever</h1>
+        <h2 id="cv-subtitle">Software Architect & Open-Source Creator</h2>
+        <p class="cv-tagline" id="cv-tagline">Architect of Bitigey WebOS, Nova Cloud IDE & Tusi-Lang</p>
+      </div>
+
+      <div class="contact-meta">
+        <div class="contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <a href="https://tunahanhaksever.github.io/tunahan-haksever/" target="_blank">tunahanhaksever.github.io</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/tunahanhaksever" target="_blank">github.com/tunahanhaksever</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="cv-location">Türkiye (Açık Kaynak & Uzaktan Çalışma)</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span id="cv-email">tunahanhaksever (GitHub İletişim)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="cv-section">
+      <h3 class="section-heading">
+        <i class="fa-solid fa-user-astronaut"></i> <span id="sec-summary-title">Professional Summary</span>
+      </h3>
+      <p class="summary-text" id="sec-summary-body">
+        Innovative Software Architect and Systems Developer pioneering next-generation web platforms. 
+        Specialized in building full-scale browser-based desktop environments (WebOS), high-performance cloud development studios (Cloud IDE), 
+        and custom programming language architectures (AST, Lexer, Parser & Interpreters). Committed to high-standard open-source engineering.
+      </p>
+    </section>
+
+    <!-- Flagship Systems & Engineering Projects -->
+    <section class="cv-section">
+      <h3 class="section-heading">
+        <i class="fa-solid fa-layer-group"></i> <span id="sec-projects-title">Flagship Architectures & Open-Source Systems</span>
+      </h3>
+
+      <!-- Item 1: Bitigey WebOS -->
+      <div class="timeline-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Bitigey WebOS</span>
+            <span class="item-role" id="role-webos">Lead Architect & Creator</span>
+          </div>
+          <span class="item-date">2024 - Present</span>
+        </div>
+        <p class="item-desc" id="desc-webos">
+          Engineered a comprehensive browser-based desktop operating system combining macOS workflow with Cyberpunk aesthetics. 
+          Implemented dynamic multi-window management, virtual file systems (VFS), modular app architecture, task scheduling, and system-wide hotkeys.
+        </p>
+        <div class="item-tags">
+          <span class="skill-badge">JavaScript (ESNext)</span>
+          <span class="skill-badge">Window Management API</span>
+          <span class="skill-badge">Vite</span>
+          <span class="skill-badge">Virtual File System</span>
+        </div>
+      </div>
+
+      <!-- Item 2: Nova Cloud IDE -->
+      <div class="timeline-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Nova Cloud IDE</span>
+            <span class="item-role" id="role-ide">Lead Developer</span>
+          </div>
+          <span class="item-date">2024 - Present</span>
+        </div>
+        <p class="item-desc" id="desc-ide">
+          Designed and built a zero-install cloud coding environment integrating Monaco Editor and Pyodide WebAssembly (WASM). 
+          Features multi-tab editing, split layout views, responsive file explorer, integrated command palette, and client-side execution sandbox.
+        </p>
+        <div class="item-tags">
+          <span class="skill-badge">Monaco Editor API</span>
+          <span class="skill-badge">WebAssembly (WASM)</span>
+          <span class="skill-badge">Pyodide Engine</span>
+          <span class="skill-badge">Developer Tooling</span>
+        </div>
+      </div>
+
+      <!-- Item 3: Tusi-Lang -->
+      <div class="timeline-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Tusi-Lang Programming Language</span>
+            <span class="item-role" id="role-tusi">Language Designer & Core Engineer</span>
+          </div>
+          <span class="item-date">2024 - Present</span>
+        </div>
+        <p class="item-desc" id="desc-tusi">
+          Researched and built a custom programming language with an independent Lexical Analyzer (Lexer), Abstract Syntax Tree (AST) Parser, 
+          and recursive Interpreter runtime. Authored the official TPM (Tusi Package Manager) and comprehensive multilingual documentation.
+        </p>
+        <div class="item-tags">
+          <span class="skill-badge">Compiler Engineering</span>
+          <span class="skill-badge">AST Parser</span>
+          <span class="skill-badge">Interpreter Runtime</span>
+          <span class="skill-badge">Package Manager (TPM)</span>
+        </div>
+      </div>
+
+      <!-- Item 4: BitigeyDB & MetaClean -->
+      <div class="timeline-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">BitigeyDB & Bitigey MetaClean</span>
+            <span class="item-role" id="role-tools">Creator</span>
+          </div>
+          <span class="item-date">2024 - Present</span>
+        </div>
+        <p class="item-desc" id="desc-tools">
+          Created a lightweight asynchronous JSON database engine for client/server architectures and a client-side EXIF/metadata privacy cleaner 
+          to scrub sensitive image and document metadata directly inside the web browser.
+        </p>
+        <div class="item-tags">
+          <span class="skill-badge">Database Design</span>
+          <span class="skill-badge">Client Security</span>
+          <span class="skill-badge">Privacy Engineering</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="cv-section">
+      <h3 class="section-heading">
+        <i class="fa-solid fa-code"></i> <span id="sec-skills-title">Core Technical Competencies</span>
+      </h3>
+
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h4 id="skill-cat-1"><i class="fa-solid fa-laptop-code"></i> Frontend & WebOS Systems</h4>
+          <p id="skill-desc-1">JavaScript (ESNext), TypeScript, HTML5 Canvas, Responsive CSS, Web Workers, Virtual Window Managers, Monaco Editor.</p>
+        </div>
+        <div class="skill-block">
+          <h4 id="skill-cat-2"><i class="fa-solid fa-gear"></i> Systems & Compilers</h4>
+          <p id="skill-desc-2">Lexer & AST Parser construction, Interpreter design, WebAssembly (WASM), Pyodide runtime, Virtual File Systems.</p>
+        </div>
+        <div class="skill-block">
+          <h4 id="skill-cat-3"><i class="fa-solid fa-server"></i> Backend & Storage</h4>
+          <p id="skill-desc-3">Node.js, RESTful Architecture, JSON Database Engines (BitigeyDB), Asynchronous I/O pipelines.</p>
+        </div>
+        <div class="skill-block">
+          <h4 id="skill-cat-4"><i class="fa-solid fa-screwdriver-wrench"></i> DevOps & Open Source</h4>
+          <p id="skill-desc-4">Git, GitHub Ecosystem, CI/CD with GitHub Actions, Vite, Open Source project management, Documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="cv-section">
+      <h3 class="section-heading">
+        <i class="fa-solid fa-language"></i> <span id="sec-lang-title">Spoken Languages</span>
+      </h3>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h4>🇹🇷 Türkçe</h4>
+          <p id="lang-tr-level">Ana Dil (Native)</p>
+        </div>
+        <div class="skill-block">
+          <h4>🇬🇧 English</h4>
+          <p id="lang-en-level">Mesleki & Teknik Yeterlilik (Professional Working Proficiency)</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Multi-Language Translation Dictionary
+    const cvData = {
+      en: {
+        pageTitle: "Tunahan Haksever | Curriculum Vitae (CV) - Software Architect",
+        subtitle: "Software Architect & Open-Source Creator",
+        tagline: "Architect of Bitigey WebOS, Nova Cloud IDE & Tusi-Lang",
+        back: "Back to Portfolio",
+        print: "Print / Save as PDF",
+        location: "Turkey (Open Source & Remote Available)",
+        email: "Contact via GitHub",
+        summaryTitle: "Professional Summary",
+        summaryBody: "Innovative Software Architect and Systems Developer pioneering next-generation web platforms. Specialized in building full-scale browser-based desktop environments (WebOS), high-performance cloud development studios (Cloud IDE), and custom programming language architectures (AST, Lexer, Parser & Interpreters). Committed to high-standard open-source engineering.",
+        projectsTitle: "Flagship Architectures & Open-Source Systems",
+        roleWebos: "Lead Architect & Creator",
+        descWebos: "Engineered a comprehensive browser-based desktop operating system combining macOS workflow with Cyberpunk aesthetics. Implemented dynamic multi-window management, virtual file systems (VFS), modular app architecture, task scheduling, and system-wide hotkeys.",
+        roleIde: "Lead Developer",
+        descIde: "Designed and built a zero-install cloud coding environment integrating Monaco Editor and Pyodide WebAssembly (WASM). Features multi-tab editing, split layout views, responsive file explorer, integrated command palette, and client-side execution sandbox.",
+        roleTusi: "Language Designer & Core Engineer",
+        descTusi: "Researched and built a custom programming language with an independent Lexical Analyzer (Lexer), Abstract Syntax Tree (AST) Parser, and recursive Interpreter runtime. Authored the official TPM (Tusi Package Manager) and comprehensive multilingual documentation.",
+        roleTools: "Creator",
+        descTools: "Created a lightweight asynchronous JSON database engine for client/server architectures and a client-side EXIF/metadata privacy cleaner to scrub sensitive image and document metadata directly inside the web browser.",
+        skillsTitle: "Core Technical Competencies",
+        cat1: "Frontend & WebOS Systems",
+        desc1: "JavaScript (ESNext), TypeScript, HTML5 Canvas, Responsive CSS, Web Workers, Virtual Window Managers, Monaco Editor.",
+        cat2: "Systems & Compilers",
+        desc2: "Lexer & AST Parser construction, Interpreter design, WebAssembly (WASM), Pyodide runtime, Virtual File Systems.",
+        cat3: "Backend & Storage",
+        desc3: "Node.js, RESTful Architecture, JSON Database Engines (BitigeyDB), Asynchronous I/O pipelines.",
+        cat4: "DevOps & Open Source",
+        desc4: "Git, GitHub Ecosystem, CI/CD with GitHub Actions, Vite, Open Source project management, Documentation.",
+        langTitle: "Languages",
+        langTrLevel: "Native Speaker",
+        langEnLevel: "Professional & Technical Proficiency"
+      },
+      tr: {
+        pageTitle: "Tunahan Haksever | Özgeçmiş (CV) - Yazılım Mimarı",
+        subtitle: "Yazılım Mimarı & Açık Kaynak Geliştiricisi",
+        tagline: "Bitigey WebOS, Nova Cloud IDE & Tusi-Lang Yaratıcısı",
+        back: "Portfolyoya Dön",
+        print: "Yazdır / PDF Kaydet",
+        location: "Türkiye (Açık Kaynak & Uzaktan Çalışma)",
+        email: "GitHub Üzerinden İletişim",
+        summaryTitle: "Profesyonel Özet",
+        summaryBody: "Yeni nesil web platformlarına öncülük eden yenilikçi Yazılım Mimarı ve Sistem Geliştiricisi. Tarayıcı tabanlı tam donanımlı masaüstü ortamları (WebOS), yüksek performanslı bulut kodlama stüdyoları (Cloud IDE) ve sıfırdan tasarlanmış programlama dili mimarileri (AST, Lexer, Parser ve Yorumlayıcılar) geliştirme konusunda uzman. Açık kaynak vizyonuna bağlı.",
+        projectsTitle: "Öne Çıkan Sistemler & Açık Kaynak Çalışmalar",
+        roleWebos: "Baş Mimar & Yaratıcı",
+        descWebos: "macOS çalışma düzeni ile Cyberpunk estetiğini birleştiren tarayıcı içi tam donanımlı masaüstü işletim sistemi geliştirdi. Dinamik çoklu pencere yöneticisi, sanal dosya sistemi (VFS), modüler uygulama yapısı ve sistem kısayolları mimarisi inşa etti.",
+        roleIde: "Baş Geliştirici",
+        descIde: "Monaco Editor ve Pyodide WebAssembly (WASM) destekli sıfır kurulumlu bulut kodlama ortamı tasarladı ve inşa etti. Çoklu dosya sekmeleri, split panel, komut paleti ve istemci taraflı güvenli kod çalıştırma alanı sunar.",
+        roleTusi: "Dil Tasarımcısı & Çekirdek Mühendis",
+        descTusi: "Bağımsız Sözdizimsel Analizci (Lexer), Abstract Syntax Tree (AST) Parser ve özyinelemeli Yorumlayıcı motoruna sahip bağımsız bir programlama dili inşa etti. Resmi TPM (Tusi Paket Yöneticisi) ve çok dilli rehberleri hazırladı.",
+        roleTools: "Geliştirici & Yaratıcı",
+        descTools: "İstemci/sunucu mimarileri için hafif asenkron JSON veritabanı motoru (BitigeyDB) ve tarayıcıda hassas EXIF meta verilerini temizleyen istemci güvenlik aracı (MetaClean) geliştirdi.",
+        skillsTitle: "Temel Teknik Yetkinlikler",
+        cat1: "Frontend & WebOS Sistemleri",
+        desc1: "JavaScript (ESNext), TypeScript, HTML5 Canvas, Modern CSS, Web Workers, Sanal Pencere Yöneticileri, Monaco Editor.",
+        cat2: "Sistemler & Derleyiciler",
+        desc2: "Lexer & AST Parser inşası, Yorumlayıcı tasarımı, WebAssembly (WASM), Pyodide motoru, Sanal Dosya Sistemleri (VFS).",
+        cat3: "Backend & Veri",
+        desc3: "Node.js, RESTful Mimari, JSON Veri Tabanı Motorları (BitigeyDB), Asenkron I/O akışları.",
+        cat4: "DevOps & Açık Kaynak",
+        desc4: "Git, GitHub Ekosistemi, GitHub Actions ile CI/CD, Vite, Açık Kaynak proje yönetimi ve teknik dokümantasyon.",
+        langTitle: "Diller",
+        langTrLevel: "Ana Dil",
+        langEnLevel: "Mesleki ve Teknik Yeterlilik"
+      },
+      de: {
+        pageTitle: "Tunahan Haksever | Lebenslauf (CV) - Softwarearchitekt",
+        subtitle: "Softwarearchitekt & Open-Source-Entwickler",
+        tagline: "Architekt von Bitigey WebOS, Nova Cloud IDE & Tusi-Lang",
+        back: "Zurück zum Portfolio",
+        print: "Drucken / Als PDF speichern",
+        location: "Türkei (Open Source & Remote)",
+        email: "Kontakt über GitHub",
+        summaryTitle: "Berufliches Profil",
+        summaryBody: "Innovativer Softwarearchitekt und Systementwickler für zukunftsweisende Webplattformen. Spezialisiert auf browserbasierte Desktop-Betriebssysteme (WebOS), Cloud-Entwicklungsumgebungen (Cloud IDE) und Compiler-/Interpreter-Architekturen (AST, Lexer, Parser).",
+        projectsTitle: "Flaggschiff-Projekte & Open-Source-Systeme",
+        roleWebos: "Chefarchitekt & Schöpfer",
+        descWebos: "Entwicklung eines browserbasierten Desktop-Betriebssystems mit macOS-Workflow und Cyberpunk-Ästhetik. Multi-Fenster-Manager, virtuelles Dateisystem (VFS) und modulare App-Architektur.",
+        roleIde: "Hauptentwickler",
+        descIde: "Entwurf einer installationsfreien Cloud-Entwicklungsumgebung mit Monaco Editor und Pyodide WebAssembly (WASM). Mehrere Dateireiter, geteilte Layouts und clientseitige Ausführung.",
+        roleTusi: "Sprachdesigner & Kernentwickler",
+        descTusi: "Konzeption einer unabhängigen Programmiersprache mit Lexer, Abstract Syntax Tree (AST) Parser und Interpreter-Laufzeitumgebung inklusive eigenem Paketmanager (TPM).",
+        roleTools: "Entwickler",
+        descTools: "Leichtgewichtige asynchrone JSON-Datenbank-Engine (BitigeyDB) und clientseitiges Datenschutz-Tool (MetaClean) zur Bereinigung von EXIF-Metadaten im Browser.",
+        skillsTitle: "Technische Kernkompetenzen",
+        cat1: "Frontend- & WebOS-Systeme",
+        desc1: "JavaScript (ESNext), TypeScript, HTML5 Canvas, Responsive CSS, Web Workers, Fenstermanager, Monaco Editor.",
+        cat2: "Systeme & Compiler",
+        desc2: "Lexer- & AST-Parser-Bau, Interpreter-Design, WebAssembly (WASM), Pyodide, Virtuelle Dateisysteme.",
+        cat3: "Backend & Speicherung",
+        desc3: "Node.js, RESTful Architekturen, JSON-Datenbank-Engines (BitigeyDB), Asynchrone Pipelines.",
+        cat4: "DevOps & Open Source",
+        desc4: "Git, GitHub-Ökosystem, CI/CD mit GitHub Actions, Vite, Open-Source-Projektleitung.",
+        langTitle: "Sprachen",
+        langTrLevel: "Muttersprache",
+        langEnLevel: "Fließend in Wort und Schrift (Fachsprache)"
+      },
+      fr: {
+        pageTitle: "Tunahan Haksever | Curriculum Vitae (CV) - Architecte Logiciel",
+        subtitle: "Architecte Logiciel & Créateur Open Source",
+        tagline: "Créateur de Bitigey WebOS, Nova Cloud IDE et Tusi-Lang",
+        back: "Retour au Portfolio",
+        print: "Imprimer / Enregistrer en PDF",
+        location: "Turquie (Open Source & Télétravail)",
+        email: "Contact via GitHub",
+        summaryTitle: "Profil Professionnel",
+        summaryBody: "Architecte logiciel novateur et développeur système pionnier des plateformes web de nouvelle génération. Spécialisé dans les environnements de bureau basés sur navigateur (WebOS), les studios de développement cloud (Cloud IDE) et la conception de langages de programmation (AST, Lexer, Parser et Interpréteurs).",
+        projectsTitle: "Systèmes Phares & Projets Open Source",
+        roleWebos: "Architecte Principal & Créateur",
+        descWebos: "Conception d'un système d'exploitation de bureau dans le navigateur alliant l'ergonomie macOS à l'esthétique Cyberpunk. Gestionnaire multi-fenêtres, système de fichiers virtuel (VFS) et architecture modulaire.",
+        roleIde: "Développeur Principal",
+        descIde: "Création d'un environnement de code cloud sans installation intégrant Monaco Editor et Pyodide WebAssembly (WASM). Gestion d'onglets multiples, mise en page fractionnée et exécution sécurisée côté client.",
+        roleTusi: "Concepteur de Langage & Ingénieur Cœur",
+        descTusi: "Développement d'un langage de programmation complet avec analyseur lexical (Lexer), arbre syntaxique abstrait (AST) et moteur d'interprétation, accompagné de son gestionnaire de paquets (TPM).",
+        roleTools: "Créateur",
+        descTools: "Moteur de base de données JSON asynchrone (BitigeyDB) et nettoyeur de métadonnées EXIF dans le navigateur pour la protection de la vie privée (MetaClean).",
+        skillsTitle: "Compétences Techniques Clés",
+        cat1: "Frontend & Systèmes WebOS",
+        desc1: "JavaScript (ESNext), TypeScript, HTML5 Canvas, CSS moderne, Web Workers, Gestionnaires de fenêtres virtuels.",
+        cat2: "Systèmes & Compilateurs",
+        desc2: "Construction de Lexer & AST Parser, conception d'interpréteur, WebAssembly (WASM), Pyodide, Systèmes VFS.",
+        cat3: "Backend & Données",
+        desc3: "Node.js, Architecture REST, Moteurs de base de données JSON (BitigeyDB), flux I/O asynchrones.",
+        cat4: "DevOps & Open Source",
+        desc4: "Git, Écosystème GitHub, CI/CD avec GitHub Actions, Vite, Gestion de projets open source.",
+        langTitle: "Langues",
+        langTrLevel: "Langue maternelle",
+        langEnLevel: "Compétence professionnelle et technique"
+      },
+      es: {
+        pageTitle: "Tunahan Haksever | Currículum Vítae (CV) - Arquitecto de Software",
+        subtitle: "Arquitecto de Software y Creador Open Source",
+        tagline: "Creador de Bitigey WebOS, Nova Cloud IDE y Tusi-Lang",
+        back: "Volver al Portafolio",
+        print: "Imprimir / Guardar en PDF",
+        location: "Turquía (Open Source y Trabajo Remoto)",
+        email: "Contacto vía GitHub",
+        summaryTitle: "Perfil Profesional",
+        summaryBody: "Arquitecto de software innovador y desarrollador de sistemas pionero en plataformas web de próxima generación. Especializado en la creación de entornos de escritorio basados en navegador (WebOS), estudios de desarrollo en la nube (Cloud IDE) y diseño de lenguajes de programación (AST, Lexer, Parser e Intérpretes).",
+        projectsTitle: "Arquitecturas Principales y Sistemas Open Source",
+        roleWebos: "Arquitecto Principal y Creador",
+        descWebos: "Desarrollo de un sistema operativo de escritorio para navegador que combina el flujo de trabajo de macOS con la estética Cyberpunk. Gestor dinámico de múltiples ventanas, sistema de archivos virtual (VFS) y aplicaciones modulares.",
+        roleIde: "Desarrollador Principal",
+        descIde: "Diseño y construcción de un entorno de código en la nube sin instalación previa, impulsado por Monaco Editor y Pyodide WebAssembly (WASM). Edición multi-pestaña y paneles divididos.",
+        roleTusi: "Diseñador del Lenguaje e Ingeniero Principal",
+        descTusi: "Investigación y desarrollo de un lenguaje de programación con analizador léxico (Lexer), árbol de sintaxis abstracta (AST) e intérprete recursivo, junto con su propio gestor de paquetes (TPM).",
+        roleTools: "Creador",
+        descTools: "Motor ligero de base de datos JSON asíncrono (BitigeyDB) y herramienta de limpieza de metadatos EXIF en el navegador para privacidad del usuario (MetaClean).",
+        skillsTitle: "Competencias Técnicas Principales",
+        cat1: "Frontend y Sistemas WebOS",
+        desc1: "JavaScript (ESNext), TypeScript, HTML5 Canvas, CSS moderno, Web Workers, Gestores de ventanas virtuales.",
+        cat2: "Sistemas y Compiladores",
+        desc2: "Construcción de Lexer y AST Parser, diseño de intérpretes, WebAssembly (WASM), Pyodide, VFS.",
+        cat3: "Backend y Almacenamiento",
+        desc3: "Node.js, Arquitectura RESTful, Motores de bases de datos JSON (BitigeyDB), canalizaciones I/O asíncronas.",
+        cat4: "DevOps y Open Source",
+        desc4: "Git, Ecosistema GitHub, CI/CD con GitHub Actions, Vite, Gestión de proyectos de código abierto.",
+        langTitle: "Idiomas",
+        langTrLevel: "Lengua materna",
+        langEnLevel: "Competencia profesional y técnica"
+      }
+    };
+
+    function setLanguage(lang) {
+      const data = cvData[lang] || cvData.en;
+      document.documentElement.lang = lang;
+      document.title = data.pageTitle;
+
+      // Update text nodes
+      document.getElementById('cv-subtitle').textContent = data.subtitle;
+      document.getElementById('cv-tagline').textContent = data.tagline;
+      document.getElementById('txt-back').textContent = data.back;
+      document.getElementById('txt-print').textContent = data.print;
+      document.getElementById('cv-location').textContent = data.location;
+      document.getElementById('cv-email').textContent = data.email;
+
+      document.getElementById('sec-summary-title').textContent = data.summaryTitle;
+      document.getElementById('sec-summary-body').textContent = data.summaryBody;
+
+      document.getElementById('sec-projects-title').textContent = data.projectsTitle;
+      document.getElementById('role-webos').textContent = data.roleWebos;
+      document.getElementById('desc-webos').textContent = data.descWebos;
+      document.getElementById('role-ide').textContent = data.roleIde;
+      document.getElementById('desc-ide').textContent = data.descIde;
+      document.getElementById('role-tusi').textContent = data.roleTusi;
+      document.getElementById('desc-tusi').textContent = data.descTusi;
+      document.getElementById('role-tools').textContent = data.roleTools;
+      document.getElementById('desc-tools').textContent = data.descTools;
+
+      document.getElementById('sec-skills-title').textContent = data.skillsTitle;
+      document.getElementById('skill-cat-1').innerHTML = `<i class="fa-solid fa-laptop-code"></i> ` + data.cat1;
+      document.getElementById('skill-desc-1').textContent = data.desc1;
+      document.getElementById('skill-cat-2').innerHTML = `<i class="fa-solid fa-gear"></i> ` + data.cat2;
+      document.getElementById('skill-desc-2').textContent = data.desc2;
+      document.getElementById('skill-cat-3').innerHTML = `<i class="fa-solid fa-server"></i> ` + data.cat3;
+      document.getElementById('skill-desc-3').textContent = data.desc3;
+      document.getElementById('skill-cat-4').innerHTML = `<i class="fa-solid fa-screwdriver-wrench"></i> ` + data.cat4;
+      document.getElementById('skill-desc-4').textContent = data.desc4;
+
+      document.getElementById('sec-lang-title').textContent = data.langTitle;
+      document.getElementById('lang-tr-level').textContent = data.langTrLevel;
+      document.getElementById('lang-en-level').textContent = data.langEnLevel;
+
+      // Update buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+
+      // Update URL query param without reload
+      const url = new URL(window.location);
+      url.searchParams.set('lang', lang);
+      window.history.replaceState({}, '', url);
+    }
+
+    // Check initial query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialLang = urlParams.get('lang') || 'en';
+    setLanguage(initialLang);
+
+    // Event listeners
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+  </script>
+</body>
+</html>
