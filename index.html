@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags & SEO -->
+  <title>Tunahan Haksever | Yazılım Mühendisi & Açık Kaynak Geliştiricisi</title>
+  <meta name="title" content="Tunahan Haksever | Yazılım Mühendisi & Açık Kaynak Geliştiricisi">
+  <meta name="description" content="Tunahan Haksever; Bitigey WebOS, Nova Cloud IDE ve Tusi-Lang projelerinin yaratıcısı, modern web teknolojileri ve sistem mimarileri uzmanı.">
+  <meta name="keywords" content="Tunahan Haksever, Tunahan, Haksever, Bitigey, Bitigey WebOS, Nova Cloud IDE, Tusi-Lang, Yazılım Mühendisi, Full Stack Developer, Açık Kaynak, WebOS, Cloud IDE, GitHub">
+  <meta name="author" content="Tunahan Haksever">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tunahanhaksever.github.io/tunahan-haksever/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://tunahanhaksever.github.io/tunahan-haksever/">
+  <meta property="og:title" content="Tunahan Haksever | Software Architect & Open Source Creator">
+  <meta property="og:description" content="Bitigey WebOS, Nova Cloud IDE ve Tusi-Lang projelerinin mimarı. Geleceğin web tabanlı sistemleri ve geliştirici araçları.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/tunahanhaksever">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tunahanhaksever.github.io/tunahan-haksever/">
+  <meta property="twitter:title" content="Tunahan Haksever | Software Architect & Creator">
+  <meta property="twitter:description" content="Bitigey WebOS, Nova Cloud IDE ve Tusi-Lang projelerinin geliştiricisi.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/tunahanhaksever">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Syne & Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Knowledge Graph & Entity Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://github.com/tunahanhaksever#person",
+    "name": "Tunahan Haksever",
+    "alternateName": "tunahanhaksever",
+    "url": "https://tunahanhaksever.github.io/tunahan-haksever/",
+    "image": "https://avatars.githubusercontent.com/u/tunahanhaksever",
+    "jobTitle": "Software Architect & Open Source Developer",
+    "description": "Yazılım mühendisi, açık kaynak geliştiricisi; Bitigey WebOS, Nova Cloud IDE ve Tusi programlama dilinin yaratıcısı.",
+    "knowsAbout": [
+      "Web Operating Systems",
+      "Cloud IDE Development",
+      "Programming Language Design",
+      "JavaScript",
+      "TypeScript",
+      "WebAssembly",
+      "Full Stack Web Architecture"
+    ],
+    "sameAs": [
+      "https://github.com/tunahanhaksever",
+      "https://twitter.com/tunahanhaksever",
+      "https://www.linkedin.com/in/tunahanhaksever"
+    ],
+    "creator": [
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Bitigey WebOS",
+        "description": "Tarayıcıda çalışan macOS ve Cyberpunk hibriti modern Web İşletim Sistemi.",
+        "codeRepository": "https://github.com/tunahanhaksever/bitigey-webos",
+        "programmingLanguage": "JavaScript"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Nova Cloud IDE",
+        "description": "Monaco Editor ve WebAssembly altyapılı tarayıcı içi bulut kodlama ortamı.",
+        "codeRepository": "https://github.com/tunahanhaksever/nova-cloud-ide",
+        "programmingLanguage": "JavaScript"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Tusi-Lang",
+        "description": "Özel Lexer, Parser ve Yorumlayıcı mimarisine sahip Türkçe temelli bağımsız programlama dili.",
+        "codeRepository": "https://github.com/tunahanhaksever/tusi-lang",
+        "programmingLanguage": "JavaScript"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">TH</span>
+        <span class="logo-text">Tunahan<span class="highlight">.dev</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" class="nav-link">Hakkımda</a>
+        <a href="#projects" class="nav-link">Projeler</a>
+        <a href="#skills" class="nav-link">Teknolojiler</a>
+        <a href="#terminal" class="nav-link">Terminal</a>
+        <a href="#contact" class="nav-link contact-btn">İletişim</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://github.com/tunahanhaksever" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Açık Kaynak Sistemler & WebOS Mimarı</span>
+        </div>
+
+        <h1 class="hero-title">
+          Merhaba, Ben <span class="gradient-text">Tunahan Haksever</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Tarayıcı sınırlarını zorlayan <strong>Web İşletim Sistemleri</strong>, bulut kodlama stüdyoları ve 
+          özelleştirilmiş <strong>programlama dili mimarileri</strong> geliştiriyorum. 
+          Açık kaynak <strong>Bitigey Ekosistemi</strong> ve <strong>Nova Cloud IDE</strong> yaratıcısı.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> Projeleri Keşfet
+          </a>
+          <a href="https://github.com/tunahanhaksever" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub Profilim
+          </a>
+          <button id="copy-quick-email" class="btn btn-ghost" title="E-postayı Kopyala">
+            <i class="fa-regular fa-envelope"></i> İletişime Geç
+          </button>
+        </div>
+
+        <!-- Quick Metrics -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-num" data-val="10">10+</span>
+            <span class="metric-label">Özgün Açık Kaynak Proje</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">WebOS</span>
+            <span class="metric-label">Bulut Masaüstü Mimarisi</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">Tusi</span>
+            <span class="metric-label">Programlama Dili & Yorumlayıcı</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// MİSYON & VİZYON</span>
+        <h2 class="section-title">Yazılımın Yeni Nesil Web Sınırları</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel">
+          <div class="about-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Sistem & Mimari Tasarımı</h3>
+          <p>
+            Yalnızca standart web sayfaları değil; tarayıcı üzerinde çoklu pencere yöneticisi,
+            süreç planlayıcı (process scheduler) ve sanal dosya sistemleri barındıran 
+            kapsamlı <strong>Web İşletim Sistemleri</strong> inşa ediyorum.
+          </p>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Dil & Derleyici Mühendisliği</h3>
+          <p>
+            Kendi sözdizimsel analizcisine (Lexer), sözdizim ağacına (AST) ve yorumlayıcısına sahip
+            <strong>Tusi-Lang</strong> projesiyle yazılım dillerinin çekirdek mekanizmalarını araştırıyor ve geliştiriyorum.
+          </p>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="about-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Cloud Native IDE Çözümleri</h3>
+          <p>
+            <strong>Nova Cloud IDE</strong> ile Monaco Editor entegrasyonu, WebAssembly destekli Python/JS çalıştırma
+            motorları ve modern geliştirici araçlarını tarayıcıya taşıyorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// AÇIK KAYNAK ÇALIŞMALAR</span>
+        <h2 class="section-title">Öne Çıkan Başyapıtlar</h2>
+        <p class="section-desc">GitHub üzerinde aktif olarak geliştirdiğim ve topluluğa sunduğum başlıca sistemler.</p>
+      </div>
+
+      <!-- Project Filter Buttons -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">Tümü</button>
+        <button class="filter-tab" data-filter="systems">Sistem & WebOS</button>
+        <button class="filter-tab" data-filter="devtools">Geliştirici Araçları</button>
+        <button class="filter-tab" data-filter="languages">Diller & Derleyiciler</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Bitigey WebOS -->
+        <article class="project-card glass-panel" data-category="systems">
+          <div class="project-badge">Bayrak Proje</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">🖥️</span>
+              <h3>Bitigey WebOS</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/bitigey-webos" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Tarayıcı üzerinde çalışan, macOS estetiği ile Cyberpunk atmosferini birleştiren tam donanımlı Web İşletim Sistemi.
+            Dinamik pencere yönetimi, görev çubuğu, sanal terminal ve entegre web uygulamaları içerir.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Window Manager</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Cyberpunk UI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/bitigey-webos" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Nova Cloud IDE -->
+        <article class="project-card glass-panel" data-category="devtools">
+          <div class="project-badge">Geliştirici Aracı</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">⚡</span>
+              <h3>Nova Cloud IDE</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/nova-cloud-ide" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Monaco Editor gücü ve Pyodide WebAssembly desteğiyle sıfır kurulum gerektiren tarayıcı tabanlı bulut IDE.
+            Çoklu dosya sekmesi, sözdizimi renklendirme, split panel ve yerleşik terminal ile donatılmıştır.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Monaco Editor</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">Pyodide</span>
+            <span class="tag">Cloud IDE</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/nova-cloud-ide" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Tusi-Lang -->
+        <article class="project-card glass-panel" data-category="languages">
+          <div class="project-badge">Programlama Dili</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">⚙️</span>
+              <h3>Tusi-Lang</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/tusi-lang" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Bağımsız Lexer, AST Parser ve Interpreter motoruna sahip modern bir programlama dili deneyi.
+            Kendi paket yöneticisi (TPM) ve çok dilli öğrenme kılavuzlarıyla zenginleştirilmiş dil mimarisi.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Lexer & Parser</span>
+            <span class="tag">AST</span>
+            <span class="tag">Compiler Design</span>
+            <span class="tag">TPM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/tusi-lang" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: BitigeyDB & AI Studio -->
+        <article class="project-card glass-panel" data-category="systems">
+          <div class="project-badge">Veri & AI</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">🧠</span>
+              <h3>BitigeyDB & AI</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/bitigeydb" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Web tabanlı uygulamalar için hafif, hızlı ve yüksek performanslı veri yönetim mekanizması.
+            Yapay zekâ destekli modüller ve asenkron veri akışı için tasarlandı.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Database Engine</span>
+            <span class="tag">AI Integration</span>
+            <span class="tag">JSON Storage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/bitigeydb" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Bitigey Design Studio -->
+        <article class="project-card glass-panel" data-category="devtools">
+          <div class="project-badge">Tasarım Aracı</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">🎨</span>
+              <h3>Bitigey Design Studio</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/bitigey-design-studio" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Modern UI bileşenleri, SVG vektör manipülasyonu ve prototip üretimi için web tabanlı interaktif stüdyo ortamı.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Canvas API</span>
+            <span class="tag">UI/UX Tool</span>
+            <span class="tag">Vector Graphics</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/bitigey-design-studio" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: Bitigey Sözlük & MetaClean -->
+        <article class="project-card glass-panel" data-category="devtools">
+          <div class="project-badge">Web Uygulaması</div>
+          <div class="project-header">
+            <div class="project-title-area">
+              <span class="project-icon">🛡️</span>
+              <h3>Bitigey MetaClean & Sözlük</h3>
+            </div>
+            <a href="https://github.com/tunahanhaksever/bitigey-metaclean" target="_blank" rel="noopener" class="project-github-link" aria-label="GitHub Repo">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="project-summary">
+            Dosyalardaki EXIF ve gizli meta verileri tarayıcıda istemci taraflı temizleyen güvenlik aracı ve etimolojik sözlük veritabanı.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Privacy & Security</span>
+            <span class="tag">EXIF Cleaner</span>
+            <span class="tag">Client-side</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tunahanhaksever/bitigey-metaclean" target="_blank" rel="noopener" class="card-btn">
+              <span>Depoyu İncele</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Simulator Section -->
+    <section id="terminal" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// İNTERAKTİF ÇALIŞMA ALANI</span>
+        <h2 class="section-title">Tunahan CLI & Sistem Terminali</h2>
+        <p class="section-desc">Terminali kullanarak hakkımdaki bilgileri, projeleri ve Tusi kodlarını doğrudan test edin.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-title">tunahan@bitigey-kernel: ~ (bash/tusi)</div>
+          <div class="terminal-actions">
+            <button id="clear-term-btn" class="term-action-btn"><i class="fa-solid fa-trash-can"></i> Temizle</button>
+          </div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="term-line output">
+            <span class="cyan-text">Bitigey Kernel v2.4.0 (x86_64-wasm-webos)</span>
+          </div>
+          <div class="term-line output">
+            Kullanılabilir komutları görmek için <span class="highlight-text">help</span> yazın veya aşağıdaki butonlara tıklayın.
+          </div>
+          <div class="term-quick-btns">
+            <button class="cmd-pill" data-cmd="help">help</button>
+            <button class="cmd-pill" data-cmd="whoami">whoami</button>
+            <button class="cmd-pill" data-cmd="projects">projects</button>
+            <button class="cmd-pill" data-cmd="skills">skills</button>
+            <button class="cmd-pill" data-cmd="tusi-demo">tusi-demo</button>
+            <button class="cmd-pill" data-cmd="contact">contact</button>
+          </div>
+          <div class="term-input-row">
+            <span class="term-prompt">tunahan@root:~$</span>
+            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Bir komut yazın (örn: help)...">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technology Matrix -->
+    <section id="skills" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// TEKNOLOJİ YIĞINI</span>
+        <h2 class="section-title">Yetkinlikler & Araçlar</h2>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skill-category glass-panel">
+          <div class="category-header">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Diller & Çekirdek</h3>
+          </div>
+          <div class="tech-chips">
+            <span class="tech-chip"><i class="fa-brands fa-js"></i> JavaScript (ESNext)</span>
+            <span class="tech-chip"><i class="fa-solid fa-code"></i> TypeScript</span>
+            <span class="tech-chip"><i class="fa-brands fa-html5"></i> HTML5 / Web APIs</span>
+            <span class="tech-chip"><i class="fa-brands fa-css3-alt"></i> Modern CSS / Responsive</span>
+            <span class="tech-chip"><i class="fa-brands fa-python"></i> Python (Pyodide WASM)</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <div class="category-header">
+            <i class="fa-solid fa-cubes"></i>
+            <h3>WebOS & Sistem Mimarisi</h3>
+          </div>
+          <div class="tech-chips">
+            <span class="tech-chip"><i class="fa-solid fa-window-restore"></i> Window Management</span>
+            <span class="tech-chip"><i class="fa-solid fa-gear"></i> Web Workers & Multithreading</span>
+            <span class="tech-chip"><i class="fa-solid fa-file-code"></i> Monaco Editor Integration</span>
+            <span class="tech-chip"><i class="fa-solid fa-box-archive"></i> Virtual File System (VFS)</span>
+            <span class="tech-chip"><i class="fa-solid fa-bolt"></i> WebAssembly (WASM)</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <div class="category-header">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Derleyiciler & Dil Tasarımı</h3>
+          </div>
+          <div class="tech-chips">
+            <span class="tech-chip"><i class="fa-solid fa-terminal"></i> Lexical Analysis (Lexer)</span>
+            <span class="tech-chip"><i class="fa-solid fa-network-wired"></i> Abstract Syntax Tree (AST)</span>
+            <span class="tech-chip"><i class="fa-solid fa-play"></i> Custom Interpreters</span>
+            <span class="tech-chip"><i class="fa-solid fa-box"></i> Package Managers (TPM)</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <div class="category-header">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Araçlar & DevOps</h3>
+          </div>
+          <div class="tech-chips">
+            <span class="tech-chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub Ecosystem</span>
+            <span class="tech-chip"><i class="fa-solid fa-bolt-lightning"></i> Vite & Modern Bundlers</span>
+            <span class="tech-chip"><i class="fa-brands fa-node-js"></i> Node.js & npm</span>
+            <span class="tech-chip"><i class="fa-solid fa-sliders"></i> GitHub Actions & CI/CD</span>
+            <span class="tech-chip"><i class="fa-solid fa-shield-halved"></i> Client-side Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="section-container">
+      <div class="contact-box glass-panel">
+        <span class="section-tag">// BAĞLANTIYA GEÇ</span>
+        <h2 class="contact-title">Birlikte Sıradışı Bir Proje İnşa Edelim</h2>
+        <p class="contact-desc">
+          Açık kaynak işbirlikleri, sistem mimarisi danışmanlığı veya WebOS ekosistemi hakkında fikir alışverişi için
+          doğrudan bana ulaşabilirsiniz.
+        </p>
+
+        <div class="contact-buttons">
+          <a href="https://github.com/tunahanhaksever" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> GitHub: @tunahanhaksever
+          </a>
+          <button id="copy-email-btn" class="btn btn-secondary">
+            <i class="fa-solid fa-copy"></i> E-Posta Bilgisini Kopyala
+          </button>
+        </div>
+
+        <!-- Notification Toast -->
+        <div id="toast" class="toast">Kopyalandı!</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>© 2026 <strong>Tunahan Haksever</strong>. Tüm hakları açık kaynak vizyonuyla saklıdır.</p>
+        <p class="sub-credit">Bitigey WebOS & Nova Cloud IDE Ekosistemi</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/tunahanhaksever" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="https://github.com/tunahanhaksever/bitigey-webos" target="_blank" rel="noopener" class="footer-link">Bitigey WebOS</a>
+        <a href="https://github.com/tunahanhaksever/nova-cloud-ide" target="_blank" rel="noopener" class="footer-link">Nova Cloud IDE</a>
+        <a href="https://github.com/tunahanhaksever/tusi-lang" target="_blank" rel="noopener" class="footer-link">Tusi-Lang</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
