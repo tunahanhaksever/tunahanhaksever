@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initTerminal();
   initTusiStudio();
+  initMobileNav();
 });
 
 /* ==========================================================================
@@ -339,7 +340,7 @@ function initTerminal() {
       <div>• <strong>Sistem & WebOS:</strong> Pencere Yöneticisi (Window Manager), Sanal Dosya Sistemi (VFS), Web Workers.</div>
       <div>• <strong>Derleyiciler & Diller:</strong> Lexical Analysis (Lexer), Abstract Syntax Tree (AST), Yorumlayıcı Tasarımı.</div>
       <div>• <strong>Bulut Araçları:</strong> Monaco Editor API, WebAssembly (WASM), Pyodide, Vite.</div>
-      <div>• <strong>Veri Mimarisi:</strong> Asenkron JSON Motorları (BitigeyDB), İstemci Güvenliği (MetaClean).</div>
+      <div>• <strong>Veri Sistemleri:</strong> Asenkron JSON Motorları (BitigeyDB), İstemci Güvenliği (MetaClean).</div>
     `,
 
     // Temizle
@@ -575,10 +576,10 @@ yazdır(ad + " - " + yil);</code></pre>
       <div>🦄 <strong>Tusi Programlama Dili Nedir?</strong></div>
       <p style="margin: 4px 0;">
         <strong>Tusi-Lang</strong>, Türkçenin fonetik sadeliği ile derleyici teorisini harmanlayan bağımsız bir programlama dilidir.
-        <strong>Tunahan Haksever</strong> tarafından açık kaynaklı ve eğitim amaçlı bir sistem mimarisi olarak geliştirilmiştir.
+        <strong>Tunahan Haksever</strong> tarafından açık kaynaklı ve eğitim amaçlı bir sistem projesi olarak geliştirilmiştir.
       </p>
       <ul style="margin: 6px 0; padding-left: 20px;">
-        <li>🔹 <strong>Özgün Mimari:</strong> Harici kütüphane bağımlılığı olmaksızın kendi Lexer ve AST Parser motorunu barındırır.</li>
+        <li>🔹 <strong>Özgün Motor:</strong> Harici kütüphane bağımlılığı olmaksızın kendi Lexer ve AST Parser motorunu barındırır.</li>
         <li>🔹 <strong>TPM (Tusi Paket Yöneticisi):</strong> Modüler kütüphane paylaşım sistemi.</li>
         <li>🔹 <strong>Yerleşik Web Motoru:</strong> Ek sunucu yazılımı kurmadan web siteleri ve API'ler sunabilir.</li>
       </ul>
@@ -749,6 +750,41 @@ function initTusiWebMockup() {
 
       if (titleEl) titleEl.innerHTML = data.title;
       if (descEl) descEl.innerHTML = data.desc;
+    });
+  });
+}
+
+/* ==========================================================================
+   5. Mobile Navigation Drawer Controller
+   ========================================================================== */
+function initMobileNav() {
+  const toggleBtn = document.getElementById('mobile-toggle-btn');
+  const closeBtn = document.getElementById('drawer-close-btn');
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  const links = document.querySelectorAll('.drawer-item');
+
+  if (!toggleBtn || !drawer || !backdrop) return;
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.classList.add('drawer-open');
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.classList.remove('drawer-open');
+  }
+
+  toggleBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      closeDrawer();
     });
   });
 }

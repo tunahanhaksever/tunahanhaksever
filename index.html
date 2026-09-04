@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Cache-Busted Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=3.2">
+  <link rel="stylesheet" href="style.css?v=3.5">
 
   <!-- Google Knowledge Graph Schema -->
   <script type="application/ld+json">
@@ -93,8 +93,43 @@
           <i class="fa-brands fa-github"></i> GitHub
         </a>
       </div>
+
+      <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Menüyü Aç">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="avatar-badge">TH</span>
+        <span class="brand-title">Tunahan Haksever</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Menüyü Kapat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#about" class="drawer-item"><i class="fa-solid fa-user-tie"></i> Hakkımda</a>
+      <a href="#ecosystem" class="drawer-item"><i class="fa-solid fa-layer-group"></i> Sistemler & WebOS</a>
+      <a href="#apps" class="drawer-item"><i class="fa-solid fa-cubes"></i> Uygulamalar</a>
+      <a href="#tusi-studio" class="drawer-item"><i class="fa-solid fa-robot"></i> Tusi Stüdyo & Bot</a>
+      <a href="#literature" class="drawer-item"><i class="fa-solid fa-book-open"></i> Edebiyat & Eserler</a>
+      <a href="#terminal" class="drawer-item"><i class="fa-solid fa-terminal"></i> Terminal</a>
+      <a href="cv.html" class="drawer-item cv-item"><i class="fa-solid fa-file-invoice"></i> CV (5 Dil)</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="https://bitigey.com" target="_blank" rel="noopener" class="btn btn-cyan">
+        <i class="fa-solid fa-globe"></i> bitigey.com Portalı
+      </a>
+      <a href="https://github.com/tunahanhaksever" target="_blank" rel="noopener" class="btn btn-dark">
+        <i class="fa-brands fa-github"></i> GitHub: @tunahanhaksever
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
 
   <main>
     <!-- Hero Section -->
@@ -168,7 +203,7 @@
 
         <div class="card-box">
           <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-          <h3>Dil & Derleyici Mimarisi</h3>
+          <h3>Dil & Derleyici Geliştirme</h3>
           <p>
             Kendi sözdizimsel analizcisi (Lexer), Abstract Syntax Tree (AST) parser'ı ve özyinelemeli yorumlayıcısına sahip 
             <strong>Tusi-Lang</strong> projesiyle yazılım dillerinin çekirdek mekanizmalarını araştırıyor ve paket yöneticisini (TPM) geliştiriyorum.
@@ -205,7 +240,7 @@
             <h3>🖥️ Bitigey WebOS</h3>
             <p>
               Tarayıcı üzerinde çalışan macOS düzeni ile Cyberpunk atmosferini birleştiren tam donanımlı Web İşletim Sistemi. 
-              Sürükle-bırak pencere yöneticisi, dahili terminal, sanal dosya sistemi (VFS) ve modüler uygulama mimarisi içerir.
+              Sürükle-bırak pencere yöneticisi, dahili terminal, sanal dosya sistemi (VFS) ve modüler uygulama yapısı içerir.
             </p>
             <div class="tag-row">
               <span class="tag">JavaScript (ESNext)</span>
@@ -263,7 +298,7 @@
             <h3>⚙️ Tusi-Lang & TPM</h3>
             <p>
               Özel Lexer, AST Parser ve Interpreter motoruna sahip bağımsız programlama dili deneyi. 
-              Kendi paket yöneticisi (TPM) ve çok dilli öğrenme kılavuzlarıyla zenginleştirilmiş dil mimarisi.
+              Kendi paket yöneticisi (TPM) ve çok dilli öğrenme kılavuzlarıyla zenginleştirilmiş dil projesi.
             </p>
             <div class="tag-row">
               <span class="tag">Lexer & AST</span>
@@ -290,7 +325,7 @@
           <div class="card-content">
             <h3>🧠 BitigeyDB & AI</h3>
             <p>
-              Tarayıcı içi ve istemci/sunucu mimarileri için tasarlanmış hafif, asenkron ve yüksek hızlı JSON veritabanı motoru.
+              Tarayıcı içi ve istemci/sunucu sistemleri için tasarlanmış hafif, asenkron ve yüksek hızlı JSON veritabanı motoru.
             </p>
             <div class="tag-row">
               <span class="tag">JSON Storage</span>
@@ -604,6 +639,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=3.2"></script>
+  <script src="script.js?v=3.5"></script>
 </body>
 </html>
