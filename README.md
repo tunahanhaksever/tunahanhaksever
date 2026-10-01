@@ -17,11 +17,10 @@ Hi there! 👋 I am **Tunahan Haksever**.
 
 I build open-source projects that turn the web browser into a complete cloud desktop. I love creating web operating systems, browser-based coding tools, and programming languages.
 
-I am also an active contributor to major global open-source ecosystems, including **Kubernetes (CNCF)**, **Astro Docs**, and Turkey's national operating system **Pardus (TÜBİTAK)**.
+I am the creator of the **Bitigey Ecosystem**, developing modern developer tools, cloud workstations, and system architectures.
 
 - 🔭 **What I'm Building:** [Bitigey WebOS](https://github.com/tunahanhaksever/bitigey-webos) (A full desktop OS inside the browser) & [Nova Cloud IDE](https://github.com/tunahanhaksever/nova-cloud-ide) (Browser coding workspace)
 - ⚙️ **Core Engineering:** [Tusi-Lang](https://github.com/tunahanhaksever/tusi-lang) (Custom programming language with its own parser, interpreter, and package manager)
-- 🌐 **Global Contributions:** Initiating official Turkish localization for [Kubernetes](https://github.com/kubernetes/website) and [Astro Docs](https://github.com/withastro/docs)
 - 💻 **Live Portfolio:** Check out [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/) for live web demos and interactive terminal
 - 🧠 **Tech Interests:** System Architecture, WebAssembly (WASM), Compiler Design, and Modern Web Technologies
 
@@ -32,7 +31,7 @@ I am also an active contributor to major global open-source ecosystems, includin
 
 Ben **Tunahan Haksever**. Web tarayıcısını yalnızca sayfaları görüntüleyen bir araç olmaktan çıkarıp, içerisinde bağımsız pencerelerin, sanal dosya sistemlerinin ve kodlama araçlarının çalıştığı eksiksiz bir bulut çalışma ortamına dönüştürmek üzerine çalışıyorum. 
 
-Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-Lang** gibi yenilikçi projeler geliştirmenin yanı sıra, **Kubernetes**, **Astro** ve **TÜBİTAK Pardus** gibi büyük projelere aktif katkılar sağlıyorum.
+Açık kaynak dünyasında **Bitigey Ekosistemi**, **Nova Cloud IDE** ve **Tusi-Lang** gibi yenilikçi projeler geliştiriyorum.
 </details>
 
 ---
