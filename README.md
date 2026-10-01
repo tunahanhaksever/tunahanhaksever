@@ -5,8 +5,6 @@
   <em>Web Operating Systems, Cloud IDEs & System Tools</em>
 </p>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Website-38bdf8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tunahanhaksever.github.io/tunahanhaksever/)
-[![Resume](https://img.shields.io/badge/📄_Resume-CV-10b981?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=en)
 [![Bitigey Portal](https://img.shields.io/badge/📚_Writing-bitigey.com-a855f7?style=for-the-badge&logo=safari&logoColor=white)](https://bitigey.com)
 
 ---
@@ -21,7 +19,6 @@ I am the creator of the **Bitigey Ecosystem**, developing browser-based utilitie
 
 - 🔭 **Current Projects:** [Bitigey WebOS](https://github.com/tunahanhaksever/bitigey-webos) (Web desktop interface) & [Nova Cloud IDE](https://github.com/tunahanhaksever/nova-cloud-ide) (Browser-based code editor)
 - ⚙️ **Language Engineering:** [Tusi-Lang](https://github.com/tunahanhaksever/tusi-lang) (Programming language project with Lexer, Parser, and Package Manager)
-- 💻 **Live Portfolio:** Visit [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/) for project demos and interactive web terminal
 - 🧠 **Tech Focus:** JavaScript/TypeScript, WebAssembly, Monaco Editor, and Browser Architecture
 
 ---
@@ -64,5 +61,3 @@ I am the creator of the **Bitigey Ecosystem**, developing browser-based utilitie
 ### 📬 Contact
 
 - ✉️ **Email:** [contact@tunahanhaksever.com](mailto:contact@tunahanhaksever.com)
-- 🌐 **Portfolio:** [tunahanhaksever.github.io/tunahanhaksever](https://tunahanhaksever.github.io/tunahanhaksever/)
-- 📄 **Resume / CV:** [English CV](https://tunahanhaksever.github.io/tunahanhaksever/cv.html?lang=en)
